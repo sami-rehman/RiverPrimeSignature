@@ -53,7 +53,7 @@ const EmailSignature = () => {
       Please Update Your Details
     </h2>
     <span class="animate-blink text-red-500 font-semibold">
-    Note: Please click on the input field to add your details, and then click the "Download" button.
+    Note: Enter your details below the click the Download button to issue your Email Signature.
     </span>
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {[
