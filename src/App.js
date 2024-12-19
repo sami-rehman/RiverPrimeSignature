@@ -13,7 +13,7 @@ const EmailSignature = () => {
   const [userData, setUserData] = useState({
     name: "Sami ur",
     lastname: "Rehman",
-    title: "JavaScript Developer",
+    title: "Javascript Developer",
     phone: "+971 50 123 2852",
     email: "s.rahman@riverprime.com",
     website: "www.riverprime.com"
@@ -84,7 +84,7 @@ const EmailSignature = () => {
                 name={field.name}
                 value={field.value}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 bg-gray-200 text-gray-700 border-gray-600"
+                className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 bg-[#EFEFEF] text-gray-700 border-gray-600"
               />
             </div>
           ))}
@@ -93,16 +93,16 @@ const EmailSignature = () => {
 
       <div
         ref={componentRef}
-        className="flex items-center justify-between max-w-4xl mx-auto bg-[#EFEFEF] mt-4"
+        className="flex items-center justify-between max-w-4xl mx-auto bg-[#EFEFEF] mt-4 font-almarai"
       >
         <div className="flex items-center bg-[#26519F] p-4 max-w-60 min-w-48">
-          <div className="bg-[#FDD200] h-20 w-2 -ml-4"></div>
+          <div className="bg-[#FDD200] h-24 w-2 -ml-4"></div>
           <div className="ml-3 mb-4">
             <h2 className="text-xl font-bold text-white">
               {userData?.name}{" "}
-              <span className="text-[#FDD200]">{userData?.lastname}</span>
+              <span>{userData?.lastname}</span>
             </h2>
-            <p className="text-white text-xs">{userData?.title}</p>
+            <p className="text-white font-light text-xs -mt-1">{userData?.title}</p>
           </div>
         </div>
 
@@ -110,7 +110,7 @@ const EmailSignature = () => {
           <img src={logo} alt="logo" />
         </div>
 
-        <div className="flex items-center space-x-4 px-4 pb-3">
+        <div className="flex items-center space-x-4 px-4 pb-3 pl-0">
           <img src={qrcode} alt="qrcode" />
           <div className="flex flex-col text-gray-700 space-y-2">
             {[

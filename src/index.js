@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'typeface-almarai';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import EmailSignature from './App';

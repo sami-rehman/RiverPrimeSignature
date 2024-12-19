@@ -15,6 +15,9 @@ module.exports = {
           '100%': { opacity: 1 },
         },
       },
+      fontFamily: {
+        almarai: ['Almarai', 'sans-serif'],
+      },
     },
   },
   plugins: [],
