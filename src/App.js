@@ -75,7 +75,7 @@ const EmailSignature = () => {
             name={field.name}
             value={field.value}
             onChange={handleChange}
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 bg-gray-300 text-gray-700 border-gray-600"
+            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 bg-gray-200 text-gray-700 border-gray-600"
           />
         </div>
       ))}
