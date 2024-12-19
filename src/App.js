@@ -65,7 +65,7 @@ const EmailSignature = () => {
         <div key={field.name}>
           <label
             htmlFor={field.name}
-            className="block text-sm font-medium text-gray-700 text-gray-300"
+            className="block text-sm font-medium text-gray-300"
           >
             {field.label}
           </label>
