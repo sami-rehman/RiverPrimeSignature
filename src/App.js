@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
 
 import logo from './logo.svg'
 import qrcode from './qrcode.svg'
@@ -49,7 +48,7 @@ const EmailSignature = () => {
   className="App h-screen flex flex-col bg-[#2D2D2D] text-white overflow-hidden"
 >
   <div className=" mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-lg font-bold text-center my-6 text-gray-800 dark:text-white">
+    <h2 className="text-lg font-bold text-center my-6 text-gray-800 text-white">
       Please Update Your Details
     </h2>
     <span class="animate-blink text-red-500 font-semibold">
@@ -66,7 +65,7 @@ const EmailSignature = () => {
         <div key={field.name}>
           <label
             htmlFor={field.name}
-            className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+            className="block text-sm font-medium text-gray-700 text-gray-300"
           >
             {field.label}
           </label>
@@ -76,7 +75,7 @@ const EmailSignature = () => {
             name={field.name}
             value={field.value}
             onChange={handleChange}
-            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 bg-gray-300 text-gray-700 border-gray-600"
           />
         </div>
       ))}
